@@ -1,0 +1,178 @@
+/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #6c6b6b;
+}
+
+a {
+    text-decoration: #38b48b;
+  }
+  
+  header, nav, h2, .main-visual, footer {
+    font-family: "Arial", "Helvetica", sans-serif;
+  }
+
+header {
+    width: 100%; /* 横幅100% */
+    height: 100px;
+    padding: 10px 0 0;
+    margin: 0 auto;
+    text-align: center;
+    background-color: darkgreen;
+  }
+  
+  header .heading { /* headerタグ内のheadingクラスにのみ反映される */
+    font-size: 32px;
+  }
+
+  header .heading a {
+    color: #fff;
+  }
+
+  a {
+    color: green;
+  }
+  
+  /* nav */
+  .nav-list {
+    text-align: center;
+    padding: 10px 0;
+    margin: 0 auto;
+  }
+  
+  .nav-list-item {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    color: #fff;
+  }
+  
+    /* main */
+main {
+    background-color: #ecfcdf;
+  }
+
+  .main-heading {
+    text-align: center;
+    margin: 0 20px;
+  }
+  
+  .main-box {
+    padding: 50px 0 10px 0;
+    width: 100%;
+    display: flex;
+  }
+  
+  .main-image {
+    height: 30%;
+  }
+
+  /* Pro */
+.Pro-heading {
+  padding: 10px 0 0 0;
+  text-align: center;
+  width: auto;
+  margin: 0 auto;
+}
+
+.Pro-box {
+  padding: 10px 40px 40px 40px;
+  display: flex;
+  align-items: flex-start
+}
+
+.Pro-box1 {
+  padding: 0 10px 0 0;
+  width: 30%;
+  display: flex;
+}
+
+.Pro-box2 {
+  padding: 0px 0px 10px 10px;
+  width: 70%;
+  display:flex;
+  line-height: 40px;
+  background-color: #fff;
+}
+
+.Pro-image {
+  width: 100%;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.table {
+  width: 60%; 
+}
+
+  .social i {
+    padding: 0px 20px 0px 0px;
+    display: inline-block;
+    }
+  
+  footer {
+    width: 100%; 
+    height: 120px; 
+    text-align: center;
+    line-height: 120px;
+    background-color: darkgreen;
+  }
+
+  .footer-text {
+    color: #fff;
+  }
+
+    @media screen and (max-width:768px) {
+    header {
+      width: 100%;
+    }
+
+    .nav-list {
+      width: 100%;
+     }
+    
+    main {
+      width: 100%;
+        display: block;
+      }
+
+      .main-heading {
+        width: 100%;
+      }
+
+      .main-box {
+        display: block;
+      }
+
+      .main-image {
+        width: 100%;
+      }
+
+      .Pro-heading {
+        width: 100%;
+      }
+    
+      .Pro-box {
+        display: block;
+        padding: 10px 40px 40px 40px;
+      }
+
+      .Pro-box1 {
+        width: 100%;
+        padding: 0px 0 10px 0;
+      }
+
+      .Pro-box2 {
+        width: 100%;
+        padding: 0px 10px 10px 10px;
+      }
+
+      .Pro-image {
+        width: 100%;
+      }
+
+      .table {
+        width: 100%;
+      }
+    }
